@@ -18,8 +18,8 @@ set(SOURCE_FILES
         src/Logger.cpp
         src/Config.cpp
         include/Version.h.in
-        src/Version.cpp
-        include/Version.h
+        src/VersionServer.cpp
+        include/VersionServer.h
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})

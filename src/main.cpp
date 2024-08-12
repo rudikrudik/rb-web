@@ -4,7 +4,7 @@
 #include "../include/ReadData.h"
 #include "../include/Logger.h"
 #include "../include/Config.h"
-#include "../include/Version.h"
+#include "../include/VersionServer.h"
 
 int main(int argc, char *argv[]) {
 

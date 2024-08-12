@@ -1,9 +1,9 @@
 #include <string>
 
-#include "include/WebServer.h"
-#include "include/ReadData.h"
-#include "include/Logger.h"
-#include "include/Config.h"
+#include "../include/WebServer.h"
+//#include "../include/ReadData.h"
+//#include "../include/Logger.h"
+#include "../include/Config.h"
 
 
 int main(int argc, char *argv[]) {
@@ -55,6 +55,7 @@ int main(int argc, char *argv[]) {
 
     WebServer webServer(c_string, port, &read_data);
 
+    // Запуск сервера
     if(webServer.init() != 0){
         Log(log_console, log_file, CRITICAL, "Failed to start server");
         return 1;

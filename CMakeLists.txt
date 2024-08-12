@@ -4,7 +4,7 @@ project(webserver_linux)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(webserver_linux
-        main.cpp
+        src/main.cpp
         include/TcpListener.h
         src/TcpListener.cpp
         include/WebServer.h

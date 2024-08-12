@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.22)
 if($ENV{GITHUB_RUN_NUMBER})
     set(PROJECT_VERSION 0.0.$ENV{GITHUB_RUN_NUMBER})
 else()
-    set(PROJECT_VERSION 0.0.1)
+    set(PROJECT_VERSION 0.1.1)
 endif()
 
 project(rbweb VERSION ${PROJECT_VERSION})

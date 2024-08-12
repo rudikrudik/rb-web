@@ -1,3 +1,4 @@
+#include "../include/VersionServer.h"
 #include "Version.h"
 
 int version_path(){

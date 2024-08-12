@@ -8,7 +8,7 @@ endif()
 
 project(rbweb VERSION ${PROJECT_VERSION})
 
-configure_file(include/Version.h.in Version.h)
+configure_file(include/Version.h.in include/Version.h)
 
 set(SOURCE_FILES
         src/main.cpp
@@ -23,7 +23,7 @@ set(SOURCE_FILES
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-target_include_directories(rbweb PUBLIC "${PROJECT_BINARY_DIR}")
+target_include_directories(rbweb PUBLIC "${PROJECT_BINARY_DIR}/include")
 
 install(TARGETS rbweb RUNTIME DESTINATION bin)
 install(FILES config.ini DESTINATION /usr/share/rbweb)

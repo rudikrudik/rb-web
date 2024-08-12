@@ -1,5 +1,5 @@
 #include "../include/VersionServer.h"
-#include "Version.h"
+#include "../include/Version.h"
 
 int version_path(){
     return rbweb_VERSION_PATCH;

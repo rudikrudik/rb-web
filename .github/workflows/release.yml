@@ -22,7 +22,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.run_number }}
-          release_name: rbweb v0.1.${{ github.run_number }}
+          release_name: rbweb-v0.1.${{ github.run_number }}
           draft: false
           prerelease: false
 
@@ -33,6 +33,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./rbweb-0.1.${{ github.run_number }}-Linux.deb
-          asset_name: rbweb-0.1.${{ github.run_number }}-Linux.deb
+          asset_path: ./rbweb-0.1.${{ github.run_number }}-linux.deb
+          asset_name: rbweb-0.1.${{ github.run_number }}-linux.deb
           asset_content_type: application/vnd.debian.binary-package

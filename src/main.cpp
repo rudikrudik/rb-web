@@ -4,7 +4,7 @@
 #include "../include/ReadData.h"
 #include "../include/Logger.h"
 #include "../include/Config.h"
-#include "../include/VersionServer.h"
+#include "../include/Version.h"
 
 int main(int argc, char *argv[]) {
 
@@ -21,7 +21,10 @@ int main(int argc, char *argv[]) {
 
     switch (argc) {
         case 2 :
-            if(std::string(argv[1]) == "-v"){std::cout << "Version rb-web is: " << std::to_string(version()) << std::endl;}
+            if(std::string(argv[1]) == "-v"){std::cout << "Version rb-web is: "
+                << std::to_string(version_major()) << "."
+                << std::to_string(version_minor()) << "."
+                << std::to_string(version_path()) << std::endl;}
             return 0;
         case 3 :
             if(std::string(argv[1]) == "-c"){config_file_path = argv[2];}

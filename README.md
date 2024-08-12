@@ -19,16 +19,16 @@
 
 - Для начала работы скопируйте репозиторий:
 ```
-$ git clone https://github.com/rudikrudik/rb-web.git
+git clone https://github.com/rudikrudik/rb-web.git
 ```
 - Перейдите в каталог с исходным кодом и скомпилируйте код:
 ```
-$ g++ src/main.cpp src/Config.cpp  src/Logger.cpp  src/ReadData.cpp  src/TcpListener.cpp  src/WebServer.cpp -o rb-web
+g++ src/main.cpp src/Config.cpp  src/Logger.cpp  src/ReadData.cpp  src/TcpListener.cpp  src/WebServer.cpp -o rb-web
 
 ```
 - Запустите приложение с параметрами "-c путь_до_файла_конфигурации":
 ```
-$ sudo ./rb-web -c config.ini
+sudo ./rb-web -c config.ini
 ```
 <br/>
 

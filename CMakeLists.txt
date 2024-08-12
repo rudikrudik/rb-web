@@ -17,9 +17,8 @@ set(SOURCE_FILES
         src/ReadData.cpp
         src/Logger.cpp
         src/Config.cpp
-        include/Version.h.in
         src/VersionServer.cpp
-        include/VersionServer.h
+
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})

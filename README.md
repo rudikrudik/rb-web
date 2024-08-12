@@ -1,5 +1,5 @@
 
-# Веб сервер "rb-web" на epoll сокетах
+# Веб сервер "rbweb" на epoll сокетах
 
 <b>Веб-сервер принимает и выполняет запросы от клиентов на получение статического содержимого HTML-страниц, файлов, изображений и видео. Обрабатывает только HTTP-запросы и ответы.</b>
 
@@ -23,12 +23,12 @@ git clone https://github.com/rudikrudik/rb-web.git
 ```
 - Перейдите в каталог с исходным кодом и скомпилируйте код:
 ```
-g++ src/main.cpp src/Config.cpp  src/Logger.cpp  src/ReadData.cpp  src/TcpListener.cpp  src/WebServer.cpp -o rb-web
+g++ src/main.cpp src/Config.cpp  src/Logger.cpp  src/ReadData.cpp  src/TcpListener.cpp  src/WebServer.cpp -o rbweb
 
 ```
 - Запустите приложение с параметрами "-c путь_до_файла_конфигурации":
 ```
-sudo ./rb-web -c config.ini
+sudo ./rbweb -c config.ini
 ```
 <br/>
 

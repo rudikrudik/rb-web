@@ -1,10 +1,10 @@
 #include <string>
 
 #include "../include/WebServer.h"
-//#include "../include/ReadData.h"
-//#include "../include/Logger.h"
+#include "../include/ReadData.h"
+#include "../include/Logger.h"
 #include "../include/Config.h"
-
+#include "../include/VersionServer.h"
 
 int main(int argc, char *argv[]) {
 
@@ -21,8 +21,8 @@ int main(int argc, char *argv[]) {
 
     switch (argc) {
         case 2 :
-            if(std::string(argv[1]) == "-v"){std::cout << "Version: 0.1.1" << std::endl;}
-            break;
+            if(std::string(argv[1]) == "-v"){std::cout << "Version rb-web is: " << std::to_string(version()) << std::endl;}
+            return 0;
         case 3 :
             if(std::string(argv[1]) == "-c"){config_file_path = argv[2];}
             break;

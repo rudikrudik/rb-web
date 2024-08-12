@@ -2,10 +2,6 @@ name: 'rbweb'
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-      - feature/github_actions
 
 jobs:
   build:

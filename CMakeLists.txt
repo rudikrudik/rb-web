@@ -26,6 +26,7 @@ target_include_directories(rbweb PUBLIC "${PROJECT_BINARY_DIR}/include")
 
 install(TARGETS rbweb RUNTIME DESTINATION bin)
 install(FILES config.ini DESTINATION /usr/share/rbweb)
+install(FILES rbweb-error.log DESTINATION /var/rbweb)
 
 set(CPACK_GENERATOR DEB)
 

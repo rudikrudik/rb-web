@@ -5,7 +5,7 @@
 
 ## Требования
 Для установки и запуска проекта, необходимо:
-- linux
+- ubuntu, centos
 - gcc version > 11.4.0
 - c++17
 
@@ -31,31 +31,11 @@ g++ src/main.cpp src/Config.cpp  src/Logger.cpp  src/ReadData.cpp  src/TcpListen
 ```
 sudo ./rbweb -c config.ini
 ```
-<br/>
 
-<b>Пример файла конфигурации:</b>
+## Установка rpm пакета
+- Скопируйте последнюю версию пакета
 ```
-[server]
-## IP адрес сервера и порт
-ip = 127.0.0.1
-port = 8080
-
-[file]
-## путь к файлам html
-wwwroot = /mnt/c/soft/cpp/webserver-linux/www/
-## путь к странице 404.html
-wwwerror = /mnt/c/soft/cpp/webserver-linux/error_directory/
-
-[logs]
-## путь к лог файлу
-logfile = /mnt/c/soft/cpp/webserver-linux/logs/log.txt
-
-## Уровни логирования:
-## сonsole_log_level - вывод отладочной информации в stderr
-## file_log_level - запись отладочной информации в лог файл
-## 0 = DEBUG, 1 = INFO, 2 = WARNING, 3 = ERROR, 4 = CRITICAL
-console_log_level = 0
-file_log_level = 0
+wget https://github.com/rudikrudik/rb-web/releases
 ```
 
 ## To do

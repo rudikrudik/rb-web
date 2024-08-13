@@ -25,10 +25,10 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_include_directories(rbweb PUBLIC "${PROJECT_BINARY_DIR}/include")
 
 install(TARGETS rbweb RUNTIME DESTINATION bin)
-install(FILES config.ini DESTINATION /usr/share/rbweb)
+install(FILES config.ini DESTINATION /usr/share/rbweb/conf)
 install(FILES rbweb-error.log DESTINATION /var/rbweb)
-install(DIRECTORY wwwroot/ DESTINATION /usr/share/wwwroot)
-install(DIRECTORY wwwerror/ DESTINATION /usr/share/wwwerror)
+install(DIRECTORY wwwroot/ DESTINATION /usr/share/rbweb/wwwroot)
+install(DIRECTORY wwwerror/ DESTINATION /usr/share/rbweb/wwwerror)
 
 set(CPACK_GENERATOR DEB)
 
